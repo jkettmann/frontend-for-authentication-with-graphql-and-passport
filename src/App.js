@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import LoginWithFacebook from './LoginWithFacebook';
 import SignupWithCredentials from './SignupWithCredentials';
 import LoginWithCredentials from './LoginWithCredentials';
+import LogoutButton from './LogoutButton';
 
 import { CURRENT_USER_QUERY } from './queries';
 
@@ -30,6 +31,8 @@ const App = () => {
         {firstName} {lastName}
         <br />
         {email}
+        <br />
+        <LogoutButton />
       </>
     );
   }
