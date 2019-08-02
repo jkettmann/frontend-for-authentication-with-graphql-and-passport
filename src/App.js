@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 
+import LoginWithFacebook from './LoginWithFacebook';
 import { CURRENT_USER_QUERY } from './queries';
 
 const App = () => {
@@ -31,7 +32,7 @@ const App = () => {
   }
 
   // SIGNUP AND LOGIN GO HERE
-  return <div>User is not logged in</div>;
+  return <LoginWithFacebook />;
 };
 
 export default App;

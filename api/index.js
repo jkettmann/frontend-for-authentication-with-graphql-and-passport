@@ -85,8 +85,8 @@ app.use(passport.session());
 
 app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email'] }));
 app.get('/auth/facebook/callback', passport.authenticate('facebook', {
-  successRedirect: 'http://localhost:4000/graphql',
-  failureRedirect: 'http://localhost:4000/graphql',
+  successRedirect: 'http://localhost:3000',
+  failureRedirect: 'http://localhost:3000',
 }));
 
 const server = new ApolloServer({
