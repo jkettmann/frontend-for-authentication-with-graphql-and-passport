@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 
 import LoginWithFacebook from './LoginWithFacebook';
+import SignupWithCredentials from './SignupWithCredentials';
 import { CURRENT_USER_QUERY } from './queries';
 
 const App = () => {
@@ -32,7 +33,12 @@ const App = () => {
   }
 
   // SIGNUP AND LOGIN GO HERE
-  return <LoginWithFacebook />;
+  return (
+    <>
+      <LoginWithFacebook />
+      <SignupWithCredentials />
+    </>
+  );
 };
 
 export default App;
