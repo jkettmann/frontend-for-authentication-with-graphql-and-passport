@@ -19,6 +19,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@apollo/react-hooks": "^3.0.0",
+    "apollo-boost": "^0.4.3",
     "apollo-server-express": "^2.6.3",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
