@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import express from 'express';
+import cors from 'cors';
 import session from 'express-session';
 import uuid from 'uuid/v4';
 import passport from 'passport';
@@ -66,6 +67,12 @@ passport.deserializeUser((id, done) => {
 
 const app = express();
 
+const corsOptions = {
+  origin: 'http://localhost:3000',
+  credentials: true,
+};
+app.use(cors(corsOptions));
+
 app.use(session({
   genid: (req) => uuid(),
   secret: SESSION_SECRECT,
@@ -93,7 +100,7 @@ const server = new ApolloServer({
   },
 });
 
-server.applyMiddleware({ app });
+server.applyMiddleware({ app, cors: false });
 
 app.listen({ port: PORT }, () => {
   console.log(`🚀 Server ready at http://localhost:${PORT}`);
