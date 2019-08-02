@@ -3,6 +3,8 @@ import { useQuery } from '@apollo/react-hooks';
 
 import LoginWithFacebook from './LoginWithFacebook';
 import SignupWithCredentials from './SignupWithCredentials';
+import LoginWithCredentials from './LoginWithCredentials';
+
 import { CURRENT_USER_QUERY } from './queries';
 
 const App = () => {
@@ -37,6 +39,7 @@ const App = () => {
     <>
       <LoginWithFacebook />
       <SignupWithCredentials />
+      <LoginWithCredentials />
     </>
   );
 };
