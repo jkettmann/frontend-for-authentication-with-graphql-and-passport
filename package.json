@@ -1,7 +1,7 @@
 {
-  "name": "authentication-with-graphql-passport-and-react-starter",
+  "name": "frontend-for-authentication-with-graphql-and-passport",
   "version": "0.1.0",
-  "description": "Starter project accompanying a series of articles on authentication with GraphQL",
+  "description": "Frontend for tutorial about authentication with GraphQL and passport",
   "keywords": [
     "graphql",
     "auth",
@@ -15,16 +15,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jkettmann/authentication-with-graphql-passport-and-react-starter.git"
+    "url": "git@github.com:jkettmann/frontend-for-authentication-with-graphql-and-passport.git"
   },
   "license": "MIT",
   "dependencies": {
     "apollo-server-express": "^2.9.6",
+    "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "graphql": "^14.5.8",
+    "graphql-passport": "^0.4.0",
     "nodemon": "^1.19.3",
     "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
